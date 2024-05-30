@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #2D68FF;
+    cursor: pointer;
+    border-radius: 5px;
+    
+
+}
+
+@mixin padding($pad){
+    padding: $pad;
+}
+
+%flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-1 {
+    @include padding(2% 10%);
+    @extend %flex;
+    gap: 2rem;
+    background-color: #F7F8F9;
+ 
+    border-bottom: 1px solid #96aece;
+
+}
+
+.content {
+    @include padding(2% 10%);
+    img{
+        transition: all 0.20s ease-in-out;
+        &:hover{
+            transform: scale(1.1); 
+    }
+}
+
+
+        display: grid;
+        box-shadow: #e3e3e3;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        gap: 2rem;
+  
+
+
+    div {
+        padding-bottom: 3rem;
+       @extend %flex;
+        overflow: hidden;
+        border-radius: 1.3rem;
+
+        div{
+
+            p{
+                display: flex;
+                gap: 0.5rem;
+                margin-left: 0.1rem;
+                margin-top: 0.3rem;
+            }
+            display: flex;
+            flex-direction:column ;
+            gap: 0.5rem;
+
+        }
+    }
+}
+
+
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+    button {
+        color: #2D68FF;
+        outline: none;
+        border: 1px solid #e3e3e3;
+        background-color: #fff ;
+        padding: 8px 16px;
+    }
+
+
+}
+
+.header-3 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;   
+
+        font-size: 20px;
+        li{
+            color: #2D68FF;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.footer {
+    @include padding(2% 10%);
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        font-size: 20px;
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+    }
+}
+
+
+.footer-2 {
+    @include padding(2% 10%);
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+     
+    }
+}
+
+.class-li{
+    color: #2D68FF;
+}
+.class-li-2{
+    color: rgb(3, 82, 82);
+}
+.class-li-3{
+    color: #ce0eae;
+}
+.class-li-4{
+    color: rgb(3, 201, 201);
+}
+.class-li-5{
+    color: #ce0e1e;
+}
+
+.button {
+    display: flex;
+    grid-column: 1/-1;
+
+
+
+}
